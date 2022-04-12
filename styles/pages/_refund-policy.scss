@@ -1,0 +1,30 @@
+#refund-policy {
+	padding: 150px 0 100px 0;
+	.container {
+		.page-title-sec {
+			background: #48b774;
+			text-align: center;
+			padding: 5px;
+			margin-bottom: 45px;
+		}
+
+		.sec-title {
+			padding-bottom: 20px;
+			padding-top: 10px;
+			font-size: 33px;
+			font-weight: 600;
+		}
+
+		p.paragrap-content {
+			padding-bottom: 25px;
+			font-size: clamp(16px, 3vw, 20px);
+			line-height: 35px;
+		}
+
+		h1.page-title {
+			color: #fff;
+			font-size: clamp(30px, 7vw, 55px);
+			font-weight: 600;
+		}
+	}
+}

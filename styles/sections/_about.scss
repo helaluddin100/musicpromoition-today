@@ -1,0 +1,105 @@
+#about {
+    &.type-one {
+        background: #1db954;
+    }
+    &.type-two {
+        background: #ff9e60;
+    }
+    &.type-three {
+        background: #ffae34;
+    }
+    &.type-four {
+        background: #5482ff;
+    }
+    &.type-five {
+        background: #6e8df8;
+    }
+    &.type-six {
+        background: #fe5476;
+    }
+    &.type-seven {
+        background: #ef4b4c;
+    }
+    &.type-eight {
+        background: #c41b6c;
+    }
+    &.type-nine {
+        background: #6e8df8;
+    }
+    &.type-10 {
+        background: #5a8fe9;
+    }
+    &.type-11 {
+        background: #ef4b4c;
+    }
+    &.type-12 {
+        background: #d44f4a;
+    }
+    &.type-13 {
+        background: #ff9900;
+    }
+    &.type-14 {
+        background: #ef4b4c;
+    }
+    &.type-15 {
+        background: #c41b6c;
+    }
+    &.type-16 {
+        background: #24a5e7;
+    }
+    &.type-17 {
+        background: #00b1e7;
+    }
+    .container {
+        padding: 40px 0;
+        .about-wrapper {
+            display: grid;
+            grid-template-columns: 55% 45%;
+            align-items: center;
+            @media screen and (max-width: 1080px) {
+                grid-template-columns: 1fr;
+                .about-col:nth-child(1) {
+                    grid-row: 2;
+                }
+                .about-col:nth-child(2) {
+                    grid-row: 1;
+                }
+            }
+        }
+        .about-img img {
+            width: 100%;
+        }
+        .about {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            .about-card {
+                text-align: center;
+                color: #fff;
+                padding: 45px;
+            }
+            p.count {
+                font-size: 40px;
+                font-weight: 500;
+                margin: 6px 0;
+            }
+            .col-2:first-child {
+                border-bottom: 1px solid #fff;
+                border-right: 1px solid #fff;
+            }
+            .col-2:nth-child(2) {
+                border-bottom: 1px solid #fff;
+            }
+            .col-2:nth-child(3) {
+                border-right: 1px solid #fff;
+            }
+            @media screen and (max-width: 580px) {
+                grid-template-columns: 1fr;
+                .col-2:first-child,
+                .col-2:nth-child(2),
+                .col-2:nth-child(3) {
+                    border: none;
+                }
+            }
+        }
+    }
+}

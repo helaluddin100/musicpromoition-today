@@ -1,0 +1,392 @@
+#home {
+    .page-1 {
+        padding: 96px 0 50px 0;
+        background: linear-gradient(0deg, rgba(196, 196, 196, 0) 0%, #ccfae4 100%);
+        .banner-wrapper {
+            width: 1440px;
+            max-width: 95%;
+            margin: auto;
+            min-height: 768px;
+            display: flex;
+            align-items: center;
+            .banner-inner {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                align-items: center;
+                .banner-content {
+                    p.sm-title {
+                        font-size: 35px;
+                        font-weight: 600;
+                    }
+                    p.sm-title {
+                        font-size: 30px;
+                        font-weight: 600;
+                        color: #2c2c2c;
+                        text-transform: uppercase;
+                        margin-bottom: 20px;
+                    }
+                    h1.banner-title {
+                        color: #393939;
+                        // font-size: clamp(60px, 0vw, 80px);
+                        // font-weight: 800;
+                        // line-height: 70px;
+                        font-size: clamp(50px, 10vw, 100px);
+                        font-weight: 800;
+                        line-height: 1.1;
+                        .focus {
+                            color: #1db954;
+                        }
+                    }
+                    .banner-des {
+                        margin-bottom: 30px;
+                        font-size: 18px;
+                        line-height: 30px;
+                    }
+                    a.custom-btn {
+                        background: #1db954;
+                        padding: 16px 30px;
+                        border-radius: 16px;
+                        text-decoration: none;
+                        color: #fff;
+                        transition: 0.3s;
+                        font-size: 18px;
+                        font-weight: 600;
+                        &:hover {
+                            background: #2fd168;
+                        }
+                    }
+                }
+                @media screen and (max-width: 980px) {
+                    grid-template-columns: 1fr;
+                    .banner-content {
+                        text-align: center;
+                        padding: 50px 0 80px 0;
+                    }
+                }
+                .banner-right {
+                    // display: flex;
+                    // justify-content: center;
+                    text-align: center;
+                    position: relative;
+                    .animated {
+                        position: absolute;
+                    }
+                    .ban-image {
+                        @media screen and (max-width: 980px) {
+                            max-width: 100%;
+                        }
+                    }
+                    /* ============animate 1========== */
+                    .ban-a {
+                        bottom: -130px;
+                        left: 0;
+                        animation: ban-a 4s linear infinite alternate;
+                    }
+                    @keyframes ban-a {
+                        0% {
+                            transform: translateY(0);
+                        }
+                        50% {
+                            transform: translateY(-10px);
+                        }
+                    }
+                    /* ==================animate 6 =========== */
+                    .ban-b {
+                        left: 0;
+                        top: 23%;
+                        animation: ban-b 4s linear infinite alternate;
+                    }
+                    @keyframes ban-b {
+                        0% {
+                            transform: translateX(0);
+                        }
+                        50% {
+                            transform: translateX(-10px);
+                        }
+                    }
+                    /* ===================animate 4============ */
+                    .ban-c {
+                        right: 17%;
+                        bottom: -30%;
+                    }
+                    /* ===============animate 2=================== */
+                    .ban-d {
+                        right: 6%;
+                        bottom: -43px;
+                        animation: ban-d 4s linear infinite alternate;
+                    }
+                    @keyframes ban-d {
+                        0% {
+                            transform: translateX(0);
+                        }
+                        50% {
+                            transform: translateX(10px);
+                        }
+                    }
+                    /* =====================animate 3============= */
+                    .ban-e {
+                        right: 0;
+                        top: 36%;
+                        animation: ban-e 4s linear infinite alternate;
+                    }
+                    @keyframes ban-e {
+                        0% {
+                            transform: translateY(0);
+                        }
+                        50% {
+                            transform: translateY(10px);
+                        }
+                    }
+                    .ban-f {
+                        right: 13%;
+                        top: 10%;
+                        animation: ban-f 4s linear infinite alternate;
+                    }
+                    @keyframes ban-f {
+                        0% {
+                            transform: translateX(0);
+                        }
+                        50% {
+                            transform: translateX(10px);
+                        }
+                    }
+                    .glass-bg {
+                        background: #f1f1f1b0;
+                        padding: 13px 20px;
+                        text-align: left;
+                        backdrop-filter: blur(5px);
+                        border-radius: 10px;
+                        box-shadow: 0px 0px 10px 1px #ddd;
+                    }
+                    .count-area {
+                        display: flex;
+                        margin-top: 5px;
+                        align-items: center;
+                        margin-bottom: 20px;
+                    }
+                    p.animate-title {
+                        font-size: 20px;
+                        color: #000;
+                        font-weight: 500;
+                    }
+                    .count-area h4 {
+                        margin-right: 7px;
+                        font-size: 24px;
+                        font-weight: 500;
+                        color: #1db954;
+                    }
+                    .animated-inside {
+                        text-align: center;
+                        border-radius: 15px;
+                        padding: 10px;
+                        background: linear-gradient( 131deg, rgba(255, 255, 255, 1) 0%, rgb(255 255 255 / 0%) 100%);
+                    }
+                    .animated-inside h4 {
+                        font-size: 26px;
+                        font-weight: 500;
+                        color: #1db954;
+                    }
+                    p.animate-title-lg {
+                        font-size: 20px;
+                        margin-bottom: 13px;
+                        line-height: 30px;
+                        font-weight: 500;
+                    }
+                    .animated-card {
+                        width: 175px;
+                        text-align: center;
+                    }
+                    .experience-count p {
+                        font-size: 12px;
+                    }
+                    .count-area p {
+                        font-size: 12px;
+                    }
+                    img.joiner-img {
+                        position: absolute;
+                        top: -10%;
+                        left: -14%;
+                        border-radius: 50%;
+                    }
+                    .experience-count {
+                        display: flex;
+                        width: 150px;
+                        align-items: center;
+                    }
+                    .experience-count h4 {
+                        background: #1db954;
+                        color: #fff;
+                        padding: 0px 12px;
+                        font-size: 23px;
+                        border-radius: 10px;
+                        margin-right: 10px;
+                        font-weight: 500;
+                    }
+                    /* ============================MEDIA============= */
+                    @media screen and (max-width: 1200px) {
+                        .ban-a {
+                            width: 165px;
+                            bottom: -100px;
+                            left: 25%;
+                        }
+                        .ban-a img {
+                            width: 100%;
+                        }
+                    }
+                    @media screen and (max-width: 1100px) {
+                        .ban-d {
+                            display: none;
+                        }
+                    }
+                    @media screen and (max-width: 980px) {
+                        .banner-inner {
+                            grid-template-columns: 100%;
+                        }
+                        .banner-wrapper {
+                            height: auto;
+                        }
+                        .ban-d {
+                            display: block;
+                        }
+                        .ban-a {
+                            width: auto;
+                            bottom: -124px;
+                            left: 15%;
+                        }
+                        .ban-e {
+                            right: 10%;
+                            top: 36%;
+                        }
+                        .ban-b {
+                            left: 15%;
+                        }
+                        .ban-f {
+                            right: 18%;
+                        }
+                        .ban-d {
+                            right: 12%;
+                            bottom: 0;
+                        }
+                        .ban-c {
+                            right: 26%;
+                            bottom: -15%;
+                        }
+                        .ban-a {
+                            width: 165px;
+                            bottom: -35px;
+                            left: 16%;
+                        }
+                    }
+                    @media screen and (max-width: 660px) {
+                        .ban-b {
+                            left: 5%;
+                        }
+                        .ban-e {
+                            right: 3%;
+                        }
+                        .ban-a {
+                            left: 5%;
+                        }
+                        .ban-a img {
+                            height: 100px;
+                        }
+                    }
+                    @media screen and (max-width: 550px) {
+                        .ban-b {
+                            width: 115px;
+                        }
+                        .ban-d {
+                            right: 5%;
+                        }
+                        .glass-bg {
+                            padding: 8px 10px;
+                        }
+                        p.animate-title-lg {
+                            font-size: 15px;
+                            line-height: 22px;
+                        }
+                        .animated-inside {
+                            padding: 5px;
+                        }
+                        .animated-inside h4 {
+                            font-size: 20px;
+                        }
+                        .experience-count h4 {
+                            font-size: 20px;
+                        }
+                        p.animate-title {
+                            font-size: 18px;
+                        }
+                        .count-area {
+                            margin-bottom: 10px;
+                        }
+                    }
+                    @media screen and (max-width: 425px) {
+                        .ban-b {
+                            width: 110px;
+                        }
+                        .ban-f {
+                            width: 45px;
+                        }
+                        img.joiner-img {
+                            width: 35px;
+                        }
+                        p.animate-title-lg {
+                            font-size: 12px;
+                            line-height: 17px;
+                        }
+                        .animated-inside h4 {
+                            font-size: 15px;
+                        }
+                        p.animate-title {
+                            font-size: 14px;
+                        }
+                        .count-area h4 {
+                            font-size: 14px;
+                        }
+                        .count-area p {
+                            font-size: 12px;
+                        }
+                        .ban-a img {
+                            height: 60px;
+                        }
+                        .animated-inside p {
+                            font-size: 14px;
+                        }
+                        .experience-count h4 {
+                            font-size: 14px;
+                            padding: 0px 6px;
+                        }
+                        .glass-bg {
+                            padding: 3px 5px;
+                        }
+                        .ban-a {
+                            width: 130px;
+                        }
+                        .ban-e {
+                            width: 120px;
+                        }
+                        .animated-card {
+                            width: 130px;
+                        }
+                        .ban-c {
+                            width: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .text {
+            max-width: 1240px;
+            width: 100%;
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 32px;
+        }
+    }
+}
